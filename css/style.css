@@ -1,0 +1,713 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body header {
+    display: flex;
+    padding: 1em 15%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+    position: absolute;
+
+}
+
+body header .hamburger {
+    width: 30px;
+    height: 22px;
+    display: none;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+body header .hamburger .line {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 50px;
+}
+
+body header h1 {
+    font-family: "Caveat Brush";
+    color: white;
+    margin: 0;
+    padding-block: 15px;
+}
+
+body header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+body header ul li {
+    list-style: none;
+}
+
+body header ul li a {
+    padding: 10px;
+    border: 1px solid #306f6c00;
+    text-decoration: none;
+    color: #ffffffbd;
+    border-radius: 0px;
+    transition-duration: .25s;
+
+}
+
+body header ul li a:hover {
+    border: 1px solid #306f6c;
+    background: #306f6c5a;
+    color: white;
+    border-radius: 50px;
+}
+
+main {
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+main .hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+main .hero .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+main .hero .background img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.vignette-top {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+main .hero .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    color: white;
+    flex-direction: column;
+    padding-inline: 20%;
+    text-align: center;
+}
+
+main .hero .content h1 {
+    font-family: "Caveat Brush";
+    font-size: 3.75rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+main .hero .content .cta {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #306f6c;
+    background: #306f6c5a;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    backdrop-filter: blur(100px);
+    font-size: large;
+    margin-top: 40px;
+}
+
+main .hero .content .cta:hover {
+    background: #306f6c;
+    color: white;
+}
+
+main .hero .content .cta:active {
+    background: #ffffff;
+    color: #306f6c;
+}
+
+
+main .hero .content .social-media {
+    margin-top: 40px;
+    position: absolute;
+    bottom: 10px;
+}
+
+main .hero .content .social-media ul {
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+main .hero .content .social-media li {
+    list-style: none;
+
+}
+
+main .hero .content .social-media li a {
+    color: #306f6c;
+    font-size: x-large;
+    transition-duration: .25s;
+}
+
+main .hero .content .social-media li a:hover {
+    color: #ffffff;
+    font-size: x-large;
+}
+
+body main article#portofolio,
+body main article#tentang {
+    padding: 5em 15%;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+body main header {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    position: static;
+}
+
+body main header h3 {
+    color: #306f6c;
+    font-family: "Caveat Brush";
+    margin: 0;
+}
+
+body main header h2 {
+    color: #333;
+    font-family: "poppins";
+    margin: 0;
+}
+
+body main header a {
+    color: #306f6c;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    border: 1px solid #306f6c;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+body main header a:hover {
+    color: white;
+    background: #306f6c;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body main .portofolio-list {
+    width: 100%;
+    padding-block: 2em;
+    margin: 20px auto;
+    column-gap: 20px;
+    columns: 6;
+}
+
+body main .portofolio-list article {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+body main .portofolio-list article .description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition-duration: .5s;
+    cursor: default;
+    bottom: 6px;
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 10px 10px 10px 10px;
+    max-height: 100%;
+}
+
+body main .portofolio-list article p:first-child {
+    font-size: small;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+body main .portofolio-list article p {
+    font-size: xx-small;
+    color: rgba(255, 255, 255, 0.87);
+    margin: 0;
+}
+
+body main .portofolio-list article:hover .description {
+    opacity: 1;
+}
+
+body main .portofolio-list img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+body main #tentang {
+    padding-bottom: 5em;
+}
+
+body main #tentang header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    position: static;
+}
+
+body main #tentang article {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-block: 2em;
+    margin: 20px auto;
+}
+
+body main #tentang article img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: center;
+}
+
+aside {
+    position: fixed;
+    top: 38%;
+    right: 0;
+    background: #306f6c;
+    border: 1px solid #022220;
+    padding: 2em 1em;
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+    transition: 1s ease-in-out;  
+    transform: translateX(100%);
+    z-index: 100;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+aside ul img{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside ul a {
+    color: white;
+    font-size: large;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+footer p {
+    font-size: small;
+}
+
+footer .footer-top {
+    background-color: #022220;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    color: white;
+    padding: 20px 15%;
+}
+
+footer .footer-top .title {
+    border-left: 4px solid #306f6c;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+
+footer .footer-top .footer-item {
+    width: calc(100%/3);
+}
+
+footer .footer-top ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer .footer-top ul li a {
+    color: white;
+}
+
+footer .footer-top ul li i {
+    font-family: "poppins";
+    font-size: small;
+}
+
+footer .fa-facebook:before {
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Brands";
+}
+
+footer .fa-whatsapp:before {
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Brands";
+}
+
+footer .fa-twitter:before {
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Brands";
+}
+
+footer .footer-top .footer-item div {
+    width: 100%;
+}
+
+footer .footer-top form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+footer input,
+footer button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    background: #306f6c7e;
+    border: 1px solid #306f6c;
+    color: white;
+    transition-duration: .25s;
+}
+
+footer input {
+    width: 100%;
+}
+
+footer input:focus {
+    background: #306f6c1b;
+}
+
+footer button:hover {
+    background: #306f6c;
+    cursor: pointer;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15%;
+    background: #000f0e;
+    color: white;
+    align-items: center;
+}
+
+footer .footer-bottom ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+
+footer .footer-bottom ul,
+footer .footer-bottom h4,
+footer .footer-bottom p {
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-bottom span {
+    height: 15px;
+    border: solid 1px rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-bottom ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: small;
+    transition-duration: .25s;
+}
+
+footer .footer-bottom ul li a:hover {
+    color: #306f6c;
+}
+
+footer .footer-bottom .credit {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: small;
+}
+
+footer .footer-bottom .title {
+    font-family: "Caveat Brush";
+    font-size: x-large;
+    font-weight: normal;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main .hero .content h1 {
+        font-size: 3rem;
+    }
+
+    body main .portofolio-list {
+        padding-block: 2em;
+        margin: 5px auto;
+        column-gap: 10px;
+        columns: 5;
+    }
+
+    body main #tentang article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-block: 2em;
+        margin: 20px auto;
+    }
+
+    body main #tentang article img {
+        max-width: 100%;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    footer .footer-bottom {
+        flex-direction: column;
+    }
+
+    footer .footer-bottom .title {
+        order: -1;
+        background-color: #000f0e;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    body header nav {
+       display: none;
+       transition-duration: .25s;
+    }
+    body header .hamburger {
+        display: flex;
+    }
+
+    body header .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    body main header {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        justify-content: space-between;
+        transition-duration: .25s;
+    }
+
+    body main .portofolio-list {
+        padding-block: 2em;
+        margin: 5px auto;
+        column-gap: 10px;
+        columns: 4;
+    }
+
+    footer .footer-top {
+        flex-direction: column;
+        gap: 10px; 
+
+    }
+    
+
+    footer .footer-top .footer-item {
+        width: 100%;
+    }
+
+    body header.nav-active{
+        position: fixed;
+        background: #022220d4;
+        backdrop-filter: blur(1000px);
+        width: 80vw;
+        height: 100vh;
+        top: 0;
+        left: 0; 
+        display: flex;
+        flex-direction: column;  
+        align-items: start;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    body header.nav-active nav {
+        width: 100%;
+        display: flex;
+    }
+    body header.nav-active nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body header.nav-active nav ul li {
+       width: 100%;
+    }
+    body header.nav-active nav ul li a{
+        background: #306f6c36;
+        border: 1px solid #306f6c;
+        padding:  10px 20px;
+       border-radius: 10px;
+       width: 100%;
+       display: block; 
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    body main .portofolio-list {
+        padding-block: 2em;
+        margin: 5px auto;
+        column-gap: 10px;
+        columns: 3;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    body header {
+        padding: 1em 5%;
+    }
+
+    main .hero .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        z-index: 10;
+        position: relative;
+        color: white;
+        flex-direction: column;
+        padding-inline: 5%;
+        text-align: start;
+    }
+
+    body main article#portofolio, body main article#tentang {
+        padding: 5em 5%;
+        padding-bottom: 0;
+
+    }
+
+    body main .portofolio-list {
+        columns: 2;
+    }
+    aside {
+        padding: 1em .5em; 
+        display: none;
+    }
+
+    footer .footer-top {
+        padding: 20px 5%;
+    }
+
+    footer .footer-bottom ul li a {
+        font-size: x-small;
+    }
+
+}
+body.moreThan25Vh header#navigation{
+    position: fixed;
+    top: 0px; 
+    opacity: 0;
+}
+body.moreThan50Vh header#navigation{
+    opacity: 0;
+    position: fixed;
+    top: 0px; 
+    transform: translateY(-500px);
+    background: #000f0ed9;
+    backdrop-filter: blur(1000px);  
+    padding-block: 10px;
+    transition: .5s ease-in-out;  
+}
+body.moreThan100Vh header#navigation{
+    opacity: 1;
+    position: fixed;
+    top: 0;  
+    transform: translateY(0px); 
+    background: #000f0ed9;
+    backdrop-filter: blur(1000px);  
+    padding-block: 10px;
+    transition: .5s ease-in-out; 
+}
+body aside.active{
+    transform: translateX(0%); 
+}
