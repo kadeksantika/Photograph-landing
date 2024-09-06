@@ -1,6 +1,6 @@
 # Bookshelf App Submission Project
 
-This is my submission project for the **Belajar Membuat Front-End Web untuk Pemula** class. The project is a bookshelf management app that allows users to record, manage, and track books they are reading. I have successfully completed the project and received a 5-star rating for meeting all the criteria.
+This is my submission project for the **Belajar Membuat Front-End Web untuk Pemula** form **DICODING** class. The project is a bookshelf management app that allows users to record, manage, and track books they are reading. I have successfully completed the project and received a 5-star rating for meeting all the criteria.
 
 ## Features
 
