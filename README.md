@@ -11,7 +11,7 @@ This project is a demonstration of web development skills learned throughout the
 - **Flexbox Layout**: Used Flexbox for layout instead of floating elements.
 - **Images**: Displayed relevant images in the `<aside>` element, either of personal photos or related to the content.
 - **Responsiveness**: The website layout adjusts for different screen sizes using media queries.
-- **JavaScript**: Incorporated JavaScript for interactive elements like dropdowns, sliders, or dynamic content manipulation.
+- **JavaScript**: Incorporated JavaScript for interactive elements with dynamic content manipulation.
 
 ## Features
 
