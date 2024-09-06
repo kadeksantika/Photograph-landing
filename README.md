@@ -17,5 +17,5 @@ This project is a demonstration of web development skills learned throughout the
 
 - **Semantic HTML**: Proper use of HTML5 semantic elements.
 - **Responsive Design**: Adapted layout for desktop, tablet, and mobile views.
-- **JavaScript Enhancements**: Implemented interactive features such as dropdowns and sliders.
+- **JavaScript Enhancements**: Implemented interactive features such as dynamic content manipulation.
 
